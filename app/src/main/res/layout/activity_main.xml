@@ -6,17 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_sub"
-        android:layout_width="128dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="327dp"
-        android:layout_marginEnd="143dp"
-        android:layout_marginBottom="516dp"
-        android:text="Sub" />
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="422dp"
+    android:layout_marginTop="241dp"
+    android:layout_marginEnd="411dp"
+    android:layout_marginBottom="151dp"
+    android:text="Coucou" />
+
+  <Button
+    android:id="@+id/btn_sub"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="400dp"
+    android:layout_marginTop="108dp"
+    android:layout_marginEnd="397dp"
+    android:layout_marginBottom="247dp"
+    android:text="Sub" />
 </RelativeLayout>

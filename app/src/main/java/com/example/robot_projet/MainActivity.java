@@ -54,15 +54,14 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onSuccess(IMqttToken asyncActionToken) {
                     // We are connected
-                    Log.d(TAG, "onSuccess");
-                    sub();
+                  Toast.makeText(MainActivity.this, "Connected", Toast.LENGTH_SHORT).show();
+                  sub();
                 }
 
                 @Override
                 public void onFailure(IMqttToken asyncActionToken, Throwable exception) {
                     // Something went wrong e.g. connection timeout or firewall problems
-                    Log.d(TAG, "onFailure");
-
+                  Toast.makeText(MainActivity.this, "NoConnected", Toast.LENGTH_SHORT).show();
                 }
             });
         } catch (MqttException e) {
@@ -81,8 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void messageArrived(String topic, MqttMessage message) throws Exception {
-                    Log.d(TAG, "topic: " + topic);
-                    Log.d(TAG, "message: " + new String(message.getPayload()));
+                  Toast.makeText(MainActivity.this, new String(message.getPayload()), Toast.LENGTH_SHORT).show();
                 }
 
                 @Override

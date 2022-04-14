@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "cruzr",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
